@@ -1,0 +1,11 @@
+name = "bland-vip"
+main = "cloudflare_worker.js"
+compatibility_date = "2026-08-04"
+
+[env.production]
+name = "bland-vip"
+main = "cloudflare_worker.js"
+
+[[env.production.kv_namespaces]]
+binding = "BLAND_FEEDBACK_STORE"
+id = "131b62c80dbc4805bbf1674eafedb605"
