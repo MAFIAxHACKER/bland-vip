@@ -21,7 +21,7 @@ const IN_MEMORY_FEEDBACKS = new Map();
 // Helper to get KV instance regardless of uppercase/lowercase binding name
 function getKV(env) {
   if (!env) return null;
-  return env.BLAND_FEEDBACK_STORE || env.bland_feedback_store || env.FEEDBACKS || env.feedbacks || env.KV || null;
+  return env.FEEDBACK_STORE || env.feedback_store || env.FEEDBACKS || env.feedbacks || env.KV || null;
 }
 
 export default {
